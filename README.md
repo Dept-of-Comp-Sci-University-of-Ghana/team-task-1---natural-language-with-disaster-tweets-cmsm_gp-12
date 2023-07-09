@@ -3,8 +3,7 @@
 This project work with the data set consisting of tweets that are either normal tweets, or tweets reporting a disaster.
 The aim of the project is to predict what type a certain tweet is, using different machine learning models
 
-**Preprocessing**
-\n
+**Preprocessing**  
 To obtain the best results as possible, we chose to perform some preprocessing to our data before fitting the models.
 The chosen preprocessings we did was as follows:
 
