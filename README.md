@@ -1,37 +1,50 @@
-# Foobar
+# Natural Language with Disaster Tweets
 
-Foobar is a Python library for dealing with word pluralization.
+This project work with the data set consisting of tweets that are either normal tweets, or tweets reporting a disaster.
+The aim of the project is to predict what type a certain tweet is, using different machine learning models
 
-## Installation
+**Preprocessing**
+To obtain the best results as possible, we chose to perform some preprocessing to our data before fitting the models.
+The chosen preprocessings we did was as follows:
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Removing or filling Na-values
+Removing duplicates
+Converting all letters to lower case
+Removing mentions (@) in tweets
+Removing URLs
+Removing email-addresses
+Removing punctuations
+Removing digits
+Removing emojis
+Removing English stopwords
+Perform stemming
+Perform Lemmatization
 
-```bash
-pip install foobar
-```
+**Models**
+We chose the following models
 
-## Usage
+Random Forest Classifier Model
+Logistic regression model
+Decision Tree Classifier
 
-```python
-import foobar
+## Findings
 
-# returns 'words'
-foobar.pluralize('word')
+**Random Forest Classifier Model**
+Accuracy Score: 79.5693%
+Precision Score: 88.4058%
+Recall Score: 60.0246%
+F_1 Score: 71.5018%
 
-# returns 'geese'
-foobar.pluralize('goose')
+**Logistic regression model**
+Accuracy Score: 81.0924%
+Precision Score: 81.5021%
+Recall Score: 72.0787%
+F_1 Score: 76.5013%
 
-# returns 'phenomenon'
-foobar.singularize('phenomena')
-```
+**Decision Tree Classifier**
+score: 0.77549
 
-## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
+## Challenges
 
-Please make sure to update tests as appropriate.
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/sRMOJrsa)
+We had some challenges creating the final submission in the right format. We did a quick fix, which might not meet the required format. At least the code should be right.
